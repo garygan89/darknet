@@ -637,7 +637,15 @@ extern "C" mat_cv* get_capture_frame_cv(cap_cv *cap) {
             {
                 cpp_cap >> *mat;
             }
-            else std::cout << " Video-stream stopped! \n";
+            else {
+                std::cout << " Video-stream stopped! \n";
+                std::cout << " Video-stream stopped! \n";
+                std::cout << " Video-stream stopped! \n";
+                std::cout << " Video-stream stopped! \n";
+                std::cout << " Video-stream stopped! \n";
+                exit(1);
+            }
+                
         }
         else cerr << " cv::VideoCapture isn't created \n";
     }
